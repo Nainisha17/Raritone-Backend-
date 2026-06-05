@@ -92,19 +92,31 @@ Authentication
 Validation
 Cloudinary Uploads
 Security Middleware
-```
-
----
-
-# Folder Structure
+## 📁 Project Structure
 
 ```text
 Raritone-Project-Backend/
-
+│
+├── server.js
+├── app.js
+│
 ├── config/
-│   ├── cloudinary.js
-│   └── db.js
-
+│   ├── db.js
+│   └── cloudinary.js
+│
+├── routes/
+│   ├── authRoutes.js
+│   ├── avatarRoutes.js
+│   ├── cartRoutes.js
+│   ├── imageRoutes.js
+│   ├── measurementRoutes.js
+│   ├── orderRoutes.js
+│   ├── productRoutes.js
+│   ├── profileRoutes.js
+│   ├── tryOnRoutes.js
+│   ├── wardrobeRoutes.js
+│   └── wishlistRoutes.js
+│
 ├── controllers/
 │   ├── authController.js
 │   ├── avatarController.js
@@ -118,40 +130,43 @@ Raritone-Project-Backend/
 │   ├── tryOnController.js
 │   ├── wardrobeController.js
 │   └── wishlistController.js
-
+│
+├── models/
+│   ├── user.js
+│   ├── Profile.js
+│   ├── Avatar.js
+│   ├── product.js
+│   ├── ProductMapping.js
+│   ├── cart.js
+│   ├── Wishlist.js
+│   ├── order.js
+│   ├── measurement.js
+│   ├── TryOn.js
+│   ├── Wardrobe.js
+│   └── Image.js
+│
 ├── middleware/
 │   ├── authMiddleware.js
-│   ├── errorMiddleware.js
 │   ├── roleMiddleware.js
 │   ├── uploadMiddleware.js
+│   ├── errorMiddleware.js
 │   └── validate.js
-
-├── models/
-│   ├── Avatar.js
-│   ├── Cart.js
-│   ├── Image.js
-│   ├── Measurement.js
-│   ├── Order.js
-│   ├── Product.js
-│   ├── ProductMapping.js
-│   ├── Profile.js
-│   ├── TryOn.js
-│   ├── User.js
-│   ├── Wardrobe.js
-│   └── Wishlist.js
-
-├── routes/
+│
 ├── validators/
+│   ├── authValidator.js
+│   ├── loginValidator.js
+│   ├── registerValidator.js
+│   ├── avatarValidator.js
+│   ├── productValidator.js
+│   └── tryOnValidator.js
+│
 ├── utils/
-├── uploads/
-
-├── app.js
-├── server.js
-├── package.json
-└── README.md
+│   ├── cloudinaryUpload.js
+│   └── generateToken.js
+│
+└── uploads/
+    └── Uploaded Images
 ```
-
----
 
 # Modules Implemented
 
